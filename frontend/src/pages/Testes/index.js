@@ -1,33 +1,40 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+// import { Link, useHistory } from 'react-router-dom';
+import { SCLAlert, SCLAlertButton } from 'react-native-scl-alert';
+
 
 import './styles.css';
 
 
-// import logoImg from '../../assets/logo.svg';
-// import herosImg from '../../assets/heroes.png';
+import smiley from '../../../assets/1-smiley.png';
+import neutral from '../../../assets/2-neutral-face.png';
+import slightly from '../../../assets/3-slightly-frowning-face.png';
 
-export default function Logon() {
+export default function Testes() {
     function handleLogin() {
         //alert(1);
     }
 
     const id = '';
 
-    function geraButoes() {
-        var html = '';
-        const button = [{
-            0: {"src":"", "name": ""},
-            1: {"src":"expressionless face", "name": ""},
-            2: {"src":"3-slightly-frowning-face", "name": ""},
-        }];
+    const button = [{
+        0: {"src":"1-smiley", "name": "smile"},
+        1: {"src":"2-neutral-face", "name": "neutral"},
+        2: {"src":"3-slightly-frowning-face", "name": "slightly"},
+    }];
 
-        for(var i = 0; i <= 3; i++) {
-            html = <button className="button" type="submit"></button>;
-        }
-
-        return html;
-    }
+    // var state = {
+    //     show: false
+    // }
+    //
+    // handleOpen = () => {
+    //     this.setState({ show: true })
+    // }
+    //
+    //
+    // handleClose = () => {
+    //     this.setState({ show: false })
+    // }
 
     return (
         <div className="logon-container">
@@ -37,16 +44,34 @@ export default function Logon() {
                 <form onSubmit={handleLogin}>
                     <h1>Testando botões de reações</h1>
 
-                    <button className="button" type="submit"></button>
+                    <img className="smile first" src={smiley} alt=""/>
+                    <img className="smile" src={neutral} alt=""/>
+                    <img className="smile" src={slightly} alt=""/>
 
-                    <Link className="back-link" to="/register">
-                        Não tenho cadastro
-                    </Link>
+
+                    {/*Alerta que deveria mostrar as ações*/}
+                    {/*<SCLAlert*/}
+                        {/*theme="info"*/}
+                        {/*show="true"*/}
+                        {/*title="Lorem"*/}
+                        {/*subtitle="Lorem ipsum dolor"*/}
+                    {/*>*/}
+                        {/*<SCLAlertButton theme="info" onPress="false">Done</SCLAlertButton>*/}
+                    {/*</SCLAlert>*/}
+
                 </form>
             </section>
-
-            <img src="" alt="Heroes"/>
         </div>
     );
+
+
+    const styles = StyleSheet.create({
+        container: {
+            flex: 1,
+            backgroundColor: '#fff',
+            alignItems: 'center',
+            justifyContent: 'center'
+        }
+    })
 
 }

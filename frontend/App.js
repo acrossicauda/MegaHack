@@ -2,11 +2,13 @@
 //import React, { useState } from 'react';
 import React from 'react';
 
-import './global.css';
 import { StyleSheet } from 'react-native';
 
-// import Menu from './src/pages/Menu';
+// import Routes from './src/pages/Menu';
 import Routes from './routes';
+
+import './global.css';
+//import './global.js'; // carregar tudo no js, por que o react nao carrega css
 
 // const AppNavigator = createStackNavigator({
 //     Home: { screen: Menu },

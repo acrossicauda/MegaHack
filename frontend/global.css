@@ -6,3 +6,139 @@
     outline: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #641A4C;
+}
+
+.btnQuiz {
+    color: white;
+    height: 77px !important;
+    marginTop: -1px !important;
+    background-color: white !important;
+    top: 10px;
+    height: 41px;
+    color: white !important;
+    fontSize: 18px
+}
+
+
+.name {
+
+    position: absolute !important;
+    width: 257px !important;
+    height: 62px !important;
+    margin: 25% 0% 0 42px;
+
+    background: #7B1B60;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFF9F9;
+
+    border: 1px solid #FBF2F2;
+    padding-left: 27%;
+}
+
+.config {
+
+    position: absolute !important;
+    width: 257px !important;
+    height: 62px !important;
+    margin: 47% 0% 0 42px;
+
+    background: #7B1B60;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #F8F0F0;
+    padding-left: 25%;
+}
+
+.alerta {
+    position: absolute !important;
+    width: 257px !important;
+    height: 62px !important;
+    margin: 69% 0% 0 42px;
+    background: #7B1B60;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #F4EBEB;
+
+    padding-left: 25%;
+
+    /*background: url('baseline_alarm_add_white_18dp.png');*/
+
+}
+
+
+.fieldSet {
+    margin: 93% 0% 0 12%;
+    paddingHorizontal: 10;
+    paddingBottom: 10;
+    borderRadius: 5;
+    borderWidth: 1;
+    alignItems: 'center';
+    borderColor: '#000';
+
+    position: absolute;
+    width: 257px;
+    height: 303px;
+
+    background: #FEF7FC;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.legend {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    fontWeight: bold;
+    backgroundColor: #FFFFFF;
+}
+
+
+.bgColor2 {
+    background-color: #641A4C;
+}
+
+.campos1 {
+    background-color: #7B1B60;
+}
+
+.smile {
+    width: 87px;
+    height: 87px;
+    margin: 63% 27px 0 0;
+}
+.first  {
+    margin-left: 10% !important;
+}
