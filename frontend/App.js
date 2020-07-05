@@ -5,7 +5,10 @@ import React from 'react';
 import './global.css';
 import { StyleSheet } from 'react-native';
 
+// import Menu from './src/pages/Menu';
 import Routes from './routes';
+
+{/*<Menu />*/}
 
 function App() {
   return (
