@@ -8,7 +8,7 @@ import { StyleSheet } from 'react-native';
 // import Menu from './src/pages/Menu';
 import Routes from './routes';
 
-{/*<Menu />*/}
+// { //<Menu /> }
 
 function App() {
   return (
