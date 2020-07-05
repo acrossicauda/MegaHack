@@ -8,7 +8,9 @@ import { StyleSheet } from 'react-native';
 // import Menu from './src/pages/Menu';
 import Routes from './routes';
 
-// { //<Menu /> }
+// const AppNavigator = createStackNavigator({
+//     Home: { screen: Menu },
+// });
 
 function App() {
   return (
