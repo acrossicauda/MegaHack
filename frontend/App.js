@@ -1,15 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet} from 'react-native';
 
-export default function App() {
+import Routes from './src/routes';
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text> Mega Hack 2020 !!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Routes />
   );
 }
+
+export default App;
+
 
 const styles = StyleSheet.create({
   container: {
@@ -19,3 +21,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
