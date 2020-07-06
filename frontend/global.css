@@ -13,13 +13,18 @@ body {
 
 .btnQuiz {
     color: white;
-    height: 77px !important;
-    marginTop: -1px !important;
+    margin-top: 2px;
+    height: 30px !important;
+    /*marginTop: -1px !important;*/
     background-color: white !important;
-    top: 10px;
-    height: 41px;
+    top: 1px;
+    /*height: 41px;*/
     color: white !important;
-    fontSize: 18px
+    fontSize: 18px;
+    /*background-color: #2ab27b !important;*/
+    padding-top: -10px !important;
+
+
 }
 
 
@@ -51,7 +56,7 @@ body {
 
 .config {
 
-    position: absolute !important;
+    /*position: absolute !important;*/
     width: 257px !important;
     height: 62px !important;
     margin: 47% 0% 0 42px;
@@ -64,10 +69,10 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 16px;
+    /*line-height: 16px;*/
     display: flex;
     align-items: center;
-    text-align: center;
+    /*text-align: center;*/
 
     color: #F8F0F0;
     padding-left: 25%;
@@ -111,7 +116,7 @@ body {
 
     position: absolute;
     width: 257px;
-    height: 303px;
+    height: 203px;
 
     background: #FEF7FC;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
