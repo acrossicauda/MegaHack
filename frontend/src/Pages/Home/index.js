@@ -311,9 +311,7 @@ export default class Home extends React.Component {
                             // message="I have a message for you!"
                             closeOnTouchOutside={true}
                             closeOnHardwareBackPress={false}
-                            showCancelButton={true}
                             showConfirmButton={true}
-                            cancelText="No, cancel"
                             confirmText=
                                 <View>
                             <img className="smile first" src={smiley} alt=""/>
