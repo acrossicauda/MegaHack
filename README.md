@@ -3,7 +3,7 @@ Projeto Sebrae
 
 Time #2
 
-Equipe:
+Equipe:<br /> 
 Quézia Tomaz Pereira Santana <br /> 
 Edson Vander Santana<br /> 
 Carlos da Silva Cardoso Júnior<br /> 
