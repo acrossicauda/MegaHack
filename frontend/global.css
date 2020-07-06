@@ -140,10 +140,11 @@ body {
 }
 
 .smile {
-    width: 87px;
-    height: 87px;
-    margin: 63% 27px 0 0;
+    width: 67px;
+    height: 67px;
+    margin: 23% -1px 0 0;
+    background-color: transparent;
 }
 .first  {
-    margin-left: 10% !important;
+    /*margin-left: 10% !important;*/
 }

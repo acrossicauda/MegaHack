@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
-import Testes from './src/pages/Testes';
+import Alert from './src/pages/Alert';
 //import Menu from './src/pages/Menu';
 import Home from './src/pages/Home';
 
@@ -14,7 +14,7 @@ export default function Routes() {
        <BrowserRouter>
             <Switch>
                  <Route path="/" exact component={Home} />
-                 <Route path="/teste" component={Testes} />
+                 <Route path="/teste" component={Alert} />
             </Switch>
        </BrowserRouter>
 

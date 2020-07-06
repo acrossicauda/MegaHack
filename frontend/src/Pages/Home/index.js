@@ -1,110 +1,120 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Linking, SectionList } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, Button, Linking, SectionList } from 'react-native';
+import AwesomeAlert from 'react-native-awesome-alerts';
+
+import smiley from '../../../assets/1-smiley.png';
+import neutral from '../../../assets/2-neutral-face.png';
+import slightly from '../../../assets/3-slightly-frowning-face.png';
+
+// import React from 'react';
+// import { StyleSheet, Text, View, Button, Linking, SectionList } from 'react-native';
 // import { NavigationContainer } from '@react-navigation/native';
 // import { createStackNavigator } from '@react-navigation/stack';
 //import SyncStorage from 'sync-storage';
+//import Alert from '../Alert';
 
-
-export default function Home() {
-    function getQuiz() {
-
-
-        const styless = StyleSheet.create({
-            container: {
-                flex: 1,
-                paddingTop: 22
-            },
-            sectionHeader: {
-                paddingTop: 2,
-                paddingLeft: 10,
-                paddingRight: 10,
-                paddingBottom: 2,
-                fontSize: 14,
-                fontWeight: 'bold',
-                backgroundColor: 'rgba(247,247,247,1.0)',
-            },
-            item: {
-                padding: 10,
-                fontSize: 18,
-                height: 44,
-            },
-        })
-
-
-        return (
-            <View>
-                <SectionList
-                    sections={[
-                        {title: 'Com que frequência devemos lavar as mãos?',
-                            data: [
-                                '1. Sempre que tocamos em algo',
-                                '2. Uma vez por dia',
-                                '3. Uma vez por mês',
-                                '4. Nunca devemos lavar as mãos'
-                            ]},
-                    ]}
-                    renderItem={({items}) => <Text style={styless.item}>{items}</Text>}
-                    renderSectionHeader={({section}) => <Text style={styless.sectionHeader}>{section.title}</Text>}
-                    keyExtractor={(items, index) => index}
-                />
-            </View>
-        );
-
-
-
-    }
-    function getQuiz_teste() {
-
-        // Popular o quiz com um json
-        return (
-            <View>
-                <Text>
-                    Com que frequência devemos lavar as mãos?
-                </Text>
-
-                <Button className="btnQuiz" value="">1. Sempre que tocamos em algo</Button>
-
-                <Button className="btnQuiz" value="">2. Uma vez por dia</Button>
-
-                <Button className="btnQuiz" value="">3. Uma vez por mês</Button>
-
-                <Button className="btnQuiz" value="">4. Nunca devemos lavar as mãos</Button>
-            </View>
-        );
-    }
-
-    function alerta() {
-        alert(1);
-    }
-
-    var quiz = getQuiz();
-
-    var name = '';
-
-    //name = SyncStorage.get('teste');
-    if(name == '') {
-        name = 'Tiago';
-        //SyncStorage.set('teste', 'Tiago');
-    }
-
-
-    return (
-
-        <View onload={alerta}>
-            <Text className="name">Olá {name}</Text>
-            <Text className="config"
-                  onPress={() => Linking.openURL('./config')}
-            >Configuração</Text>
-            <Text className="alerta"
-                  onPress={() => Linking.openURL('./alerta')}
-            >Alertas</Text>
-            <View className="fieldSet"
-                // onPress={() => Linking.openURL('./alerta')}
-            >{quiz}</View>
-        </View>
-    );
-
-}
+// export default function Home_2() {
+//     function getQuiz_2() {
+//
+//
+//         const styless = StyleSheet.create({
+//             container: {
+//                 flex: 1,
+//                 paddingTop: 22
+//             },
+//             sectionHeader: {
+//                 paddingTop: 2,
+//                 paddingLeft: 10,
+//                 paddingRight: 10,
+//                 paddingBottom: 2,
+//                 fontSize: 14,
+//                 fontWeight: 'bold',
+//                 backgroundColor: 'rgba(247,247,247,1.0)',
+//             },
+//             item: {
+//                 padding: 10,
+//                 fontSize: 18,
+//                 height: 44,
+//             },
+//         })
+//
+//
+//         return (
+//             <View>
+//                 <SectionList
+//                     sections={[
+//                         {title: 'Com que frequência devemos lavar as mãos?',
+//                             data: [
+//                                 '1. Sempre que tocamos em algo',
+//                                 '2. Uma vez por dia',
+//                                 '3. Uma vez por mês',
+//                                 '4. Nunca devemos lavar as mãos'
+//                             ]},
+//                     ]}
+//                     renderItem={({items}) => <Text style={styless.item}>{items}</Text>}
+//                     renderSectionHeader={({section}) => <Text style={styless.sectionHeader}>{section.title}</Text>}
+//                     keyExtractor={(items, index) => index}
+//                 />
+//             </View>
+//         );
+//
+//
+//
+//     }
+//     function getQuiz() {
+//         return (
+//             {Alert}
+//         );
+//         // Popular o quiz com um json
+//         return (
+//             <View>
+//                 {/*<Text>*/}
+//                     {/*Com que frequência devemos lavar as mãos?*/}
+//                 {/*</Text>*/}
+//
+//                 {/*<Button className="btnQuiz" value="">1. Sempre que tocamos em algo</Button>*/}
+//
+//                 {/*<Button className="btnQuiz" value="">2. Uma vez por dia</Button>*/}
+//
+//                 {/*<Button className="btnQuiz" value="">3. Uma vez por mês</Button>*/}
+//
+//                 {/*<Button className="btnQuiz" value="">4. Nunca devemos lavar as mãos</Button>*/}
+//             </View>
+//         );
+//     }
+//
+//     function alerta() {
+//
+//     }
+//
+//     var quiz = getQuiz();
+//
+//     var name = '';
+//
+//     //name = SyncStorage.get('teste');
+//     if(name == '') {
+//         name = 'Tiago';
+//         //SyncStorage.set('teste', 'Tiago');
+//     }
+//
+//
+//     return (
+//
+//         <View onload={alerta}>
+//             <Text className="name">Olá {name}</Text>
+//             <Text className="config"
+//                   onPress={() => Linking.openURL('./config')}
+//             >Configuração</Text>
+//             <Text className="alerta"
+//                   onPress={() => Linking.openURL('./alerta')}
+//             >Alertas</Text>
+//             <View className="fieldSet"
+//                 // onPress={() => Linking.openURL('./alerta')}
+//             >{quiz}</View>
+//         </View>
+//     );
+//
+// }
 
 // export default class Home_teste extends React.Component{
 //
@@ -241,3 +251,112 @@ export default function Home() {
 //     }
 
 // }
+
+
+
+export default class Home extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { showAlert: false };
+    };
+
+    showAlert = () => {
+        this.setState({
+            showAlert: true
+        });
+    };
+
+    hideAlert = () => {
+        this.setState({
+            showAlert: false
+        });
+    };
+
+
+
+    render() {
+        const {showAlert} = this.state;
+
+        return (
+            <View style={styles.container}>
+
+
+                <View>
+                    <Text className="name">Olá Tiago</Text>
+                    <Text className="config"
+                          onPress={() => Linking.openURL('./config')}
+                    >Configuração</Text>
+                    <Text className="alerta"
+                          onPress={() => Linking.openURL('./alerta')}
+                    >Alertas</Text>
+                    <View className="fieldSet"
+                        // onPress={() => Linking.openURL('./alerta')}
+                    >
+
+                        <Text>Como você esta se sentindo?</Text>
+                        <TouchableOpacity onPress={() => {
+                            this.showAlert();
+                        }}>
+                            <View style={styles.button}>
+                                <Text style={styles.text}>Responder</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <AwesomeAlert
+                            style={styles.fundo}
+                            show={showAlert}
+                            showProgress={false}
+                            // title="AwesomeAlert"
+                            // message="I have a message for you!"
+                            closeOnTouchOutside={true}
+                            closeOnHardwareBackPress={false}
+                            showCancelButton={true}
+                            showConfirmButton={true}
+                            cancelText="No, cancel"
+                            confirmText=
+                                <View>
+                            <img className="smile first" src={smiley} alt=""/>
+                            <img className="smile" src={neutral} alt=""/>
+                            <img className="smile" src={slightly} alt=""/>
+                    </View>
+                    confirmButtonColor="#DD6B55"
+                    onCancelPressed={() => {
+                    this.hideAlert();
+                }}
+                    onConfirmPressed={() => {
+                    this.hideAlert();
+                }}
+                    />
+
+                    </View>
+                </View>
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        // backgroundColor: '#fff',
+    },
+    button: {
+        margin: 10,
+        paddingHorizontal: 10,
+        paddingVertical: 7,
+        borderRadius: 5,
+        backgroundColor: "#2e708f",
+    },
+    text: {
+        color: '#fff',
+        fontSize: 15
+    },
+    fundo: {
+        marginLeft: "389px",
+        marginRight: "0px",
+        marginTop: "253px"
+    }
+})

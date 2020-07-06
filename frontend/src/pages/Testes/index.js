@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+// import { TouchableOpacity  } from 'react-native';
 // import { Link, useHistory } from 'react-router-dom';
-import { SCLAlert, SCLAlertButton } from 'react-native-scl-alert';
+import { StyleSheet, View } from 'react-native';
 
 
 import './styles.css';
@@ -37,31 +38,23 @@ export default function Testes() {
     // }
 
     return (
-        <div className="logon-container">
-            <section className="form">
-                <img src="" alt=""/>
+        <View>
+            <div className="logon-container">
+                <section className="form">
+                    <img src="" alt=""/>
 
-                <form onSubmit={handleLogin}>
-                    <h1>Testando botões de reações</h1>
+                    <form onSubmit={handleLogin}>
+                        <h1>Testando botões de reações</h1>
 
-                    <img className="smile first" src={smiley} alt=""/>
-                    <img className="smile" src={neutral} alt=""/>
-                    <img className="smile" src={slightly} alt=""/>
+                        <img className="smile first" src={smiley} alt=""/>
+                        <img className="smile" src={neutral} alt=""/>
+                        <img className="smile" src={slightly} alt=""/>
 
+                    </form>
+                </section>
+            </div>
 
-                    {/*Alerta que deveria mostrar as ações*/}
-                    {/*<SCLAlert*/}
-                        {/*theme="info"*/}
-                        {/*show="true"*/}
-                        {/*title="Lorem"*/}
-                        {/*subtitle="Lorem ipsum dolor"*/}
-                    {/*>*/}
-                        {/*<SCLAlertButton theme="info" onPress="false">Done</SCLAlertButton>*/}
-                    {/*</SCLAlert>*/}
-
-                </form>
-            </section>
-        </div>
+        </View>
     );
 
 
